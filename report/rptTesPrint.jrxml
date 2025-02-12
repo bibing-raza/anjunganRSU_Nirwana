@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="385" columnWidth="526" leftMargin="35" rightMargin="34" topMargin="21" bottomMargin="20">
+	<property name="ireport.zoom" value="1.5026296018031553"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="namars" class="java.lang.String"/>
+	<parameter name="alamatrs" class="java.lang.String"/>
+	<parameter name="kotars" class="java.lang.String"/>
+	<parameter name="propinsirs" class="java.lang.String"/>
+	<parameter name="kontakrs" class="java.lang.String"/>
+	<parameter name="emailrs" class="java.lang.String"/>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[SELECT DATE_FORMAT(NOW(),'Tgl. Cetak : %d-%m-%Y, Jam : %h:%i %p') waktu]]>
+	</queryString>
+	<field name="waktu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="62">
+			<staticText>
+				<reportElement x="66" y="7" width="433" height="48"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Tahoma" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[UNIT SIMRS (Sistem Informasi Manajemen Rumah Sakit)
+RSUD RATU ZALECHA MARTAPURA]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" onErrorType="Blank">
+				<reportElement x="13" y="5" width="39" height="50"/>
+				<imageExpression class="java.io.InputStream"><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="217">
+			<staticText>
+				<reportElement x="18" y="65" width="471" height="26" forecolor="#0033FF"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Tahoma" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEXT WARNA BIRU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="90" width="471" height="26" forecolor="#FFFF00"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Tahoma" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEXT WARNA KUNING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="15" width="471" height="26"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Tahoma" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEXT WARNA HITAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="40" width="471" height="26" forecolor="#FF0000"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Tahoma" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEXT WARNA MERAH]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="18" y="131" width="471" height="20"/>
+				<textElement lineSpacing="Single">
+					<font fontName="Tahoma" size="11" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{waktu}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="0" width="526" height="214"/>
+				<graphicElement>
+					<pen lineWidth="5.0" lineStyle="Double"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="422" y="15" width="77" height="184" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" lineSpacing="Single" markup="none">
+					<font fontName="Tahoma" size="60" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[OUT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="349" y="15" width="71" height="184" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" lineSpacing="Single" markup="none">
+					<font fontName="Tahoma" size="50" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[PRINT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="268" y="15" width="77" height="184" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left" lineSpacing="Single" markup="none">
+					<font fontName="Tahoma" size="60" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[TEST]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
