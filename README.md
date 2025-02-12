@@ -1,3 +1,3 @@
-![146289232-eb851503-71de-4842-a78b-00a98f0f0a62](https://user-images.githubusercontent.com/95389491/200739599-01629683-103d-4243-a9f9-7e393bf80d6c.jpeg)
+![2](https://github.com/user-attachments/assets/7e36b1c0-14ac-4dc8-a1a1-e1e6e7fe4ad3)
 # anjunganAntrian RSU Nirwana
 Merupakan simrs yang haram dibisniskan, baik untuk kepentingan pribadi, golongan ataupun kelompok (Pengembang SIMRSKHANZA wilayah Kal-Sel)
