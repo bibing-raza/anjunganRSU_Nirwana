@@ -214,7 +214,7 @@ public class frmUtamaNirwana extends javax.swing.JFrame {
 
         lblStts.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblStts.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblStts.setText("Powered by. SIMRS RSU Nirwana Copyright@2024");
+        lblStts.setText("Powered by. SIMRS RSU Nirwana Copyright@2026");
         lblStts.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblStts.setName("lblStts"); // NOI18N
         lblStts.setPreferredSize(new java.awt.Dimension(100, 23));
